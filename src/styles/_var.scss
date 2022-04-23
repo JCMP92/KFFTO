@@ -1,0 +1,32 @@
+//amiko semibold font -- from fontsquirrel
+@font-face {
+  font-family: 'amikobold';
+  src: url('/fonts/Amiko-Bold-webfont.woff') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+//amiko semibold font -- from fontsquirrel
+@font-face {
+  font-family: 'amikosemibold';
+  src: url('/fonts/Amiko-SemiBold-webfont.woff') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+//amiko regular font -- from fontsquirrel
+@font-face {
+  font-family: 'amikoregular';
+  src: url('/fonts/Amiko-Regular-webfont.woff') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+}
+//fonts
+$main-font: 'amikosemibold';
+
+//colors
+$green-kffto: rgb(28, 58, 34);
+$ligth-green-kffto: rgb(124, 198, 173);

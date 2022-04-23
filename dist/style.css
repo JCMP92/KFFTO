@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "amikobold";
+  src: url("/fonts/Amiko-Bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "amikosemibold";
+  src: url("/fonts/Amiko-SemiBold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "amikoregular";
+  src: url("/fonts/Amiko-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+section {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  max-width: 100%;
+  height: 90px;
+  justify-content: flex-end;
+  background-color: black;
+  font-family: "amikosemibold";
+}
+.navbar a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(80px, 20vh, 200px);
+  height: 90px;
+  border: none;
+  background-color: transparent;
+  color: rgb(124, 198, 173);
+}
+.navbar a:hover {
+  cursor: pointer;
+  background-color: rgb(28, 58, 34);
+  font-size: 1.1rem;
+}
+.navbar a:hover:active {
+  transform: scale(0.97);
+}
+
+.landing-content {
+  position: relative;
+  top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 90px);
+  width: 100vw;
+  max-width: 100%;
+}
+.landing-content .main-img-cont {
+  width: 100%;
+  height: 100%;
+}
+.landing-content .main-img-cont img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#identity-section .identity-content {
+  position: relative;
+  top: 90px;
+}
+
+#gallery-section .gallery-content {
+  position: relative;
+  top: 110px;
+}
+
+/*# sourceMappingURL=style.css.map */
