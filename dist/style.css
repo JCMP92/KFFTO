@@ -188,6 +188,7 @@ ul {
 #menu-section .menu-content .menu-text {
   display: flex;
   height: 38vh;
+  padding: 0 50px;
 }
 #menu-section .menu-content .menu-text .mnu-txt {
   display: flex;
