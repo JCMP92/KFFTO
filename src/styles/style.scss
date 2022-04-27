@@ -159,6 +159,7 @@ ul {
 
 //MENU SECTION STYLING---------------------------------------------
 #menu-section {
+  font-family: $main-font;
   .menu-content {
     position: relative;
     top: 90px;
@@ -166,7 +167,7 @@ ul {
     flex-direction: column;
     .menu-text {
       display: flex;
-      height: 40vh;
+      height: 38vh;
       .mnu-txt {
         display: flex;
         flex-direction: column;
@@ -185,7 +186,8 @@ ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: calc(60vh - 90px);
+    height: calc(62vh - 90px);
+
     .menu-button {
       height: 80%;
       width: 40vw;
@@ -195,15 +197,57 @@ ul {
       text-align: center;
       align-items: center;
       justify-content: center;
+      background-image: url(https://images.unsplash.com/photo-1619860860774-1e2e17343432?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+      background-size: cover; //to maintain the aspect ratio of the image
+      background-repeat: no-repeat;
+      background-position: center; //to always focus on the center of the image
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+
+      h1 {
+        color: white;
+      }
     }
     .shop-content {
       height: 80%;
       width: 40vw;
       background-color: rgb(175, 143, 175);
       display: flex;
+      flex-direction: column;
       text-align: center;
       align-items: center;
       justify-content: center;
+      background-image: url(https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80);
+      background-size: cover; //to maintain the aspect ratio of the image
+      background-repeat: no-repeat;
+      background-position: center; //to always focus on the center of the image
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+      h1 {
+        color: white;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+    .anchor-btn {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 45px;
+      width: 150px;
+      background-color: rgba(0, 0, 0, 0.7);
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: $light-green-kffto;
+      border: none;
+      outline: none;
+    }
+
+    .anchor-btn:hover {
+      @include click-button();
+      background-color: rgba(255, 255, 255, 0.7);
+      color: $green-kffto;
+      transform: scale(1.1);
     }
   }
 }
